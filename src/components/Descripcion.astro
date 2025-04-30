@@ -16,12 +16,13 @@ const yearsOfExperience = calculateYearsDifference('2022-03-01');
             <div class="row-span-3 text-9xl">👨‍💻</div>
             <div class="col-span-2 row-span-1  text-5xl">Desarrollador de Software</div>
             <div class="col-span-2 row-span-2 ">
-                <p>Desarrollador de software con <span class="text-yellow-300">+{yearsOfExperience} años de experiencia</span>, centrado en backend. Disfruto construyendo aplicaciones web que funcionen bien por dentro y se sientan bien por fuera. Me importa escribir código limpio, que escale sin dramas y que otros puedan entender sin sufrir. Siempre estoy buscando cómo mejorar, ya sea aprendiendo algo nuevo o afinando lo que ya sé. Para mí, la tecnología es una forma de crear cosas útiles que realmente le sirvan a la gente.</p>
+                <p>Desarrollador de software con <span class="text-yellow-300">+{yearsOfExperience} años de experiencia</span>, centrado en backend. Disfruto construyendo aplicaciones web que funcionen bien por dentro y se sientan bien por fuera. Me importa escribir código limpio, que escale sin dramas y que otros puedan entender sin sufrir. Siempre estoy buscando cómo mejorar, ya sea aprendiendo algo nuevo o afinando lo que ya sé. <span class=" block"/>Me ubico en Madrid, España 🇪🇸</p>
             </div>
         </div>
     </div>
 </main>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 	main {
 		@apply grid place-content-center ;
         color: #fff;
@@ -29,4 +30,7 @@ const yearsOfExperience = calculateYearsDifference('2022-03-01');
 	main > div {
 		@apply container;
 	}
+    p{
+        font-family: 'Roboto', sans-serif;
+    }
 </style>
