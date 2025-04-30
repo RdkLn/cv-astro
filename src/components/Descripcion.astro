@@ -1,0 +1,32 @@
+---
+
+const calculateYearsDifference = (startDate: string) => {
+    const currentDate = new Date();
+    const start = new Date(startDate);
+    const differenceInMilliseconds = currentDate.getTime() - start.getTime();
+    return Math.floor(differenceInMilliseconds / (1000 * 60 * 60 * 24 * 365.25));
+};
+
+const yearsOfExperience = calculateYearsDifference('2022-03-01');
+---
+
+<main class="py-5">
+    <div class="bg-gray-700 px-4 mx-auto p-4 rounded-xl max-w-3/5">
+        <div class="grid grid-flow-col grid-rows-3 gap-4">
+            <div class="row-span-3 text-9xl">👨‍💻</div>
+            <div class="col-span-2 row-span-1  text-5xl">Desarrollador de Software</div>
+            <div class="col-span-2 row-span-2 ">
+                <p>Desarrollador de software con <span class="text-yellow-300">+{yearsOfExperience} años de experiencia</span>, centrado en backend. Disfruto construyendo aplicaciones web que funcionen bien por dentro y se sientan bien por fuera. Me importa escribir código limpio, que escale sin dramas y que otros puedan entender sin sufrir. Siempre estoy buscando cómo mejorar, ya sea aprendiendo algo nuevo o afinando lo que ya sé. Para mí, la tecnología es una forma de crear cosas útiles que realmente le sirvan a la gente.</p>
+            </div>
+        </div>
+    </div>
+</main>
+<style>
+	main {
+		@apply grid place-content-center ;
+        color: #fff;
+	}
+	main > div {
+		@apply container;
+	}
+</style>

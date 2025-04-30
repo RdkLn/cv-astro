@@ -1,0 +1,40 @@
+---
+
+---
+
+<!-- <header class="bg-gray-800 text-white">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+        <h1 class="text-2xl font-bold">My Website</h1>
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="/" class="hover:text-gray-400">Home</a></li>
+                <li><a href="/about" class="hover:text-gray-400">About</a></li>
+                <li><a href="/contact" class="hover:text-gray-400">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header> -->
+
+<header class="py-4 w-full overflow-hidden shadow-lg">
+    <div class="flex md:grid-cols-3">
+        <span class="w-3/10"></span>
+        <div class="grid w-4/10 grid-cols-5 justify-items-center items-end">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a class="text-center center-logo" href="">🔰</a>
+            <a href="">Works</a>
+            <a href="">Contact</a>
+        </div>
+        <span class="w-3/10"></span>
+    </div>
+</header>
+
+<style>
+    @reference "../styles/global.css";
+    a{
+        @apply inline-block align-middle invisible sm:visible;
+    }
+    .center-logo{
+        @apply text-5xl font-extrabold visible;
+    }
+</style>
