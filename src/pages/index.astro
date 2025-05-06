@@ -1,35 +1,15 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import {getCollection} from 'astro:content';
+import Descripcion from "../components/Descripcion.astro";
+import Header from "../components/Header.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
 
-const jobs = await getCollection('jobs');
+const jobs = await getCollection("jobs");
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	 <h1 class="text-center text-7xl font-extrabold">Hello 🌍<span class="block"/> World!</h1>
-
-	 <section aria-label="Experiencia">
-		<div class="px-4 mx-auto max-w-screen-xl">
-			<div class="grid gap-6 md:grid-cols-1">
-				{
-					jobs.map((job) => {
-					const {data} = job;
-					const {id, titulo,empresa,puesto,fechas,ubicacion,descripcion} = data;
-
-					return (
-						<article class="max-w-sm rounded overflow-hidden shadow-lg p-5 transition hover:scale-110">
-							<h3 class="text-xl text-gray-900 font-semibold leading-tight">{empresa}</h3>
-							<div class="grid grid-cols-3">
-							<h5 class="col-span-2">{puesto}</h5>
-							<h5 class="text-gray-400 text-sm">{fechas}</h5>
-							</div>
-						</article>
-					)
-					})
-				}
-			</div>
-		</div>
-	 </section>
-</Layout>
+<BaseLayout>
+	<Header />
+	<Descripcion />
+</BaseLayout>
