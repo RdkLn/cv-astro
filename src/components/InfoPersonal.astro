@@ -1,0 +1,29 @@
+---
+import {getCollection} from 'astro:content';
+import { collections } from '../content/content.config';
+
+const currentJob = await getCollection('jobs',({data}) => {return data.current==true});
+---
+
+<main>
+    <div class="grid p-15 rounded-2xl">
+        <div class="row"> <img src="https://avatars.githubusercontent.com/u/90702049?s=400&u=d54b8733a3113d0c250541e05447b2f4d4448883&v=4" alt="" class="rounded-full"> </div>
+        <div class="row text-4xl titulo pb-5">Radoslaw Lekston <span class="block"/> Nadolski</div>
+        <div class="row pb-5"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores iure consequuntur alias laborum placeat soluta corrupti quae voluptate quas veniam! Tempore laborum repudiandae laboriosam necessitatibus animi dolores quos ad quo.</p></div>
+        <div class="row">Desarrollar de Software en {currentJob[0].data.empresa}</div>
+        <div class="row">Basado en Madrid, España</div>
+    </div>
+</main>
+<style>
+    main > div{
+        @apply container
+    }
+    .titulo{
+        font-family: 'Poppins', sans-serif;
+        color: #000;
+        font-weight: 800;
+    }
+    div{
+        font-family: 'Inter','sans-serif';
+    }
+</style>
