@@ -1,6 +1,7 @@
 ---
 import Descripcion from "../components/Descripcion.astro";
 import Header from "../components/Header.astro";
+import InfoPersonal from "../components/InfoPersonal.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 
@@ -11,5 +12,12 @@ const jobs = await getCollection("jobs");
 
 <BaseLayout>
 	<Header />
-	<Descripcion />
+	<!-- <Descripcion /> -->
+	 <div class="grid grid-cols-5 w-full p-10">
+		<div class="col-span-2">
+			<InfoPersonal/>
+		</div>
+		 <div class="col-span-3">
+		 </div>
+	 </div>
 </BaseLayout>
