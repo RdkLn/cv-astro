@@ -1,48 +1,66 @@
-# Astro Starter Kit: Basics
+# 💼 cv-astro
 
-```sh
-npm create astro@latest -- --template basics
+Un sitio web personal para mostrar mi experiencia profesional, construido con el framework Astro.
+
+## 🚀 Descripción del Proyecto
+
+Este proyecto es una versión digital de mi currículum vitae, donde presento mis habilidades, experiencia laboral y proyectos de forma clara y responsiva.
+
+## 📁 Estructura del Proyecto
+
+El proyecto sigue la estructura estándar de Astro:
 ```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
 /
 ├── public/
-│   └── favicon.svg
+│ └── favicon.svg
 ├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+│ ├── layouts/
+│ │ └── Layout.astro
+│ └── pages/
+│ └── index.astro
+├── package.json
+├── astro.config.mjs
+├── tsconfig.json
+└── README.md
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+- **public/**: Archivos estáticos como imágenes o íconos.
+- **src/layouts/**: Componentes de diseño general para las páginas.
+- **src/pages/**: Páginas principales del sitio.
 
-## 🧞 Commands
+## 🛠️ Primeros Pasos
 
-All commands are run from the root of the project, from a terminal:
+### Requisitos Previos
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+- [Node.js](https://nodejs.org/) (versión 14 o superior)
+- [npm](https://www.npmjs.com/) (incluido con Node.js)
 
-## 👀 Want to learn more?
+### Instalación
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+1. Clona el repositorio:
+
+```bash
+git clone https://github.com/RdkLn/cv-astro.git
+cd cv-astro
+```
+2. Instala las dependecias
+```bash
+npm install
+```
+3. Inicia el servidor de desarrollo
+```bash
+npm run dev
+```
+Luego abre tu navegador en http://localhost:4321 para ver el sitio.
+
+## 📦 Comandos Disponibles
+
+- `npm run dev`: Inicia el servidor de desarrollo.
+  
+- `npm run build`: Compila el sitio para producción.
+  
+- `npm run preview`: Previsualiza la versión de producción localmente.
+  
+## 📄 Licencia
+
+Este proyecto está bajo la licencia [MIT](LICENSE).
